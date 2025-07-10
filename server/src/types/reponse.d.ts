@@ -51,10 +51,6 @@ type ReceiptsResponse = Prettify<
       receipts: ReceiptInfo[];
       currency: string;
       weightUnit: string;
-      dateTime: {
-        date: string;
-        time: string;
-      };
     };
   }
 >;

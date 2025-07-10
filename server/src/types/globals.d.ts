@@ -60,4 +60,8 @@ type ReceiptInfo = {
   shippingFees: number;
   paidAmount: number;
   customerNewBalance: number;
+  dateTime: {
+    date: string;
+    time: string;
+  };
 };

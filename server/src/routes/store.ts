@@ -321,14 +321,7 @@ export const storeRoutes = async (app: FastifyInstance) => {
       [` Read receipts successfully`, "fg-blue", true],
     ]);
 
-    const now = new Date();
-
-    const dateTime = {
-      date: now.toLocaleDateString(),
-      time: now.toLocaleTimeString()
-    }
-
-    _res.status(200).send({ success: true, msg: "Cart Items", data: { receipts: data.receipts, currency: CURRENCY, weightUnit: WEIGHT_UNIT, dateTime } } satisfies ReceiptsResponse);
+    _res.status(200).send({ success: true, msg: "Cart Items", data: { receipts: data.receipts, currency: CURRENCY, weightUnit: WEIGHT_UNIT } } satisfies ReceiptsResponse);
   });
 
   app.get("/products", { preHandler: isLoggedIn("Products") }, async (_req: FastifyRequest, _res: FastifyReply) => {

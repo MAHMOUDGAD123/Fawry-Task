@@ -68,36 +68,17 @@ export class CheckoutService {
 
     const receiptItems: ReceiptItem[] = [];
 
-    // Print checkout receipt
-    // logger([[`\n${" ".repeat(25)}Checkout receipt${" ".repeat(24)}`, "bg-green", true]], false); // header
     cartItems.forEach((item) => {
-      // const total = item.product.price * item.quantity;
-      // logger([[`${item.quantity}x ${item.product.name}        ${total}${CURRENCY}`, "fg-cyan", true]], false);
       receiptItems.push({ name: item.product.name, quantity: item.quantity, price: item.product.price });
     });
-    // logger([[`${"-".repeat(65)}`, "fg-white", true]], false);
-    // logger([[`Subtotal   ${orderSubtotal}${CURRENCY}`, "fg-yellow", true]], false);
-    // logger([[`Shipping   ${shippingFees}${CURRENCY}`, "fg-yellow", true]], false);
-    // logger([[`Amount     ${paidAmount}${CURRENCY}`, "fg-yellow", true]], false);
 
-    // if (shipmentData) {
-    //   const { shippableItems, totalWeightInKg } = shipmentData;
-    //   // Print
-    //   logger([
-    //     [`${" ".repeat(25)}Shipment notice${" ".repeat(25)}`, "bg-gray", true],
-    //   ], false);
-    //   shippableItems.forEach(([name, { count, totalWeight }]) => {
-    //     logger([
-    //       [`${count}x ${name}        ${totalWeight / 1000}${WEIGHT_UNIT}`, "fg-cyan", true],
-          
-    //     ], false);
-    //   });
-    //   logger([[`${"-".repeat(65)}`, "fg-white", true]], false);
-    //   logger([
-    //     [`Total package weight      ${totalWeightInKg}${WEIGHT_UNIT}`, "fg-yellow", true],
-    //   ], false);
-    // }
-    // logger([[`${" ".repeat(65)}`, "bg-green", true]], false); // footer
+    
+    const now = new Date();
+
+    const dateTime = {
+      date: now.toLocaleDateString(),
+      time: now.toLocaleTimeString()
+    }
 
     return {
       shipmentData,
@@ -106,6 +87,7 @@ export class CheckoutService {
       shippingFees,
       paidAmount,
       customerNewBalance: customer.balance,
+      dateTime
     };
   }
 }
