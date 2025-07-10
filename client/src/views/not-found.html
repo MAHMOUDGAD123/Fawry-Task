@@ -1,0 +1,41 @@
+<div class="dummy-not-found">
+  <style>
+    .dummy-not-found {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      margin-block: 70px;
+
+      & > i {
+        font-size: 5rem;
+        color: var(--color-primary);
+      }
+
+      & > h1 {
+        font-family: saira;
+        color: var(--color-primary);
+      }
+
+      & > p {
+        padding: 20px;
+        margin-inline: auto;
+        max-width: 400px;
+        background-color: var(--color-primary20);
+        border-radius: 5px;
+        width: fit-content;
+        font-weight: bold;
+        word-break: break-all;
+
+        & > .route {
+          color: var(--color-primary);
+        }
+      }
+    }
+  </style>
+
+  <i class="fa-solid fa-face-frown"></i>
+  <h1>Sad Dummy!</h1>
+  <p>Sorry, <span class="route"></span> route not found</p>
+</div>

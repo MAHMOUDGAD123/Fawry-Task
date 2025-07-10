@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1001",
+    "password": "1234567",
+    "name": "Ahmed Ali",
+    "balance": 7000
+  },
+  {
+    "id": "1002",
+    "password": "1234567",
+    "name": "Mohammed Gad",
+    "balance": 50000
+  },
+  {
+    "id": "1003",
+    "password": "1234567",
+    "name": "Amr Ahmed",
+    "balance": 3000
+  },
+  {
+    "id": "1004",
+    "password": "1234567",
+    "name": "Mazen Ali",
+    "balance": 41000
+  },
+  {
+    "id": "1005",
+    "password": "1234567",
+    "name": "Hossam Mohammed",
+    "balance": 1000
+  }
+]

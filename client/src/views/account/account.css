@@ -1,0 +1,98 @@
+.account-page {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > .content {
+    width: 100%;
+    height: 100%;
+
+    & > #account_rt {
+      padding-block: 40px;
+
+      & > form {
+        padding: 40px;
+        background-color: var(--color-primary20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        gap: 40px;
+        max-width: 700px;
+        margin-inline: auto;
+        text-align: center;
+
+        & > h2 {
+          font-family: saira;
+          font-size: 3.5rem;
+          color: var(--color-primary95);
+        }
+
+        & > input {
+          padding: 10px 20px;
+          border-radius: 10px;
+          font-size: 1.5rem;
+          background-color: var(--color-primary20);
+          color: var(--color-primary);
+          width: 100%;
+          max-width: 500px;
+
+          &:focus-visible {
+            outline: 3px solid var(--color-primary95);
+          }
+
+          &::placeholder {
+            color: var(--color-primary50);
+          }
+        }
+      }
+
+      & > .profile-card {
+        padding: 40px;
+        background-color: var(--color-primary20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        gap: 25px;
+        max-width: 700px;
+        margin-inline: auto;
+        text-align: center;
+
+        & > i {
+          font-size: 8rem;
+          color: var(--color-primary);
+        }
+
+        & > .id {
+          font-family: saira;
+          font-size: 3rem;
+
+          &::first-letter {
+            color: var(--color-primary);
+          }
+        }
+
+        & > .name {
+          font-size: 3.5rem;
+        }
+
+        & > .balance {
+          font-size: 3.5rem;
+          color: var(--color-primary);
+
+          & > * {
+            font-size: 2rem;
+            color: var(--color-primary95);
+          }
+        }
+
+        & > button {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

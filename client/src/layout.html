@@ -1,0 +1,71 @@
+<header class="container">
+  <a-link to="/" class="logo">
+    <img src="logo.png" alt="logo" />
+  </a-link>
+
+  <nav>
+    <nav-link
+      to="/cart"
+      id="_cart_icon_"
+      class="cart"
+      data-name="Cart"
+      data-item-count="0"
+    >
+      <i class="fa-solid fa-cart-shopping"></i>
+    </nav-link>
+
+    <nav-link to="/receipts" class="receipts" data-name="Receipts">
+      <i class="fa-solid fa-receipt"></i>
+    </nav-link>
+
+    <nav-link to="/account" class="account" data-name="Account">
+      <i class="fa-solid fa-circle-user"></i>
+    </nav-link>
+  </nav>
+
+  <input id="sideNavToggle" type="checkbox" />
+
+  <div id="sideNav">
+    <nav>
+      <img src="logo.svg" alt="logo" />
+
+      <div class="links">
+        <nav-link to="/cart" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Cart</span>
+        </nav-link>
+
+        <nav-link to="/receipts" class="receipts">
+          <i class="fa-solid fa-receipt"></i>
+          <span>Receipts</span>
+        </nav-link>
+
+        <nav-link to="/account" class="account">
+          <i class="fa-solid fa-circle-user"></i>
+          <span>Account</span>
+        </nav-link>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="__main__" class="container"></main>
+
+<footer>
+  <span>Powered by</span>
+  <div>
+    <i class="fa-solid fa-bolt-lightning"></i>
+    <a href="https://vite.dev/" target="_blank">
+      <span>Vite</span>
+    </a>
+    <i class="fa-solid fa-bolt-lightning"></i>
+  </div>
+</footer>
+
+<div class="popup-msg" id="_popup_msg_" popover>
+  <i class="fa-solid fa-circle-xmark"></i>
+  <h2 class="type"></h2>
+  <p class="msg"></p>
+</div>
+
+<i id="backToTop" class="fa-solid fa-circle-chevron-up back-to-top"></i>

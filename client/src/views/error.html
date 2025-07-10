@@ -1,0 +1,43 @@
+<div class="dummy-error">
+  <style>
+    .dummy-error {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      margin-block: 70px;
+
+      & > i {
+        font-size: 5rem;
+        color: var(--color-primary);
+      }
+
+      & > h1 {
+        font-family: saira;
+        color: var(--color-primary);
+      }
+
+      & > .error-name {
+        font-weight: bolder;
+        font-size: 2rem;
+      }
+
+      & > .error-message {
+        padding: 20px;
+        margin-inline: 20px;
+        background-color: var(--color-primary20);
+        border-radius: 5px;
+        width: fit-content;
+        font-weight: bold;
+        word-break: break-all;
+        margin-inline: auto;
+      }
+    }
+  </style>
+
+  <i class="fa-solid fa-face-frown"></i>
+  <h1>Sad Dummy!</h1>
+  <h3 class="error-name"></h3>
+  <p class="error-message"></p>
+</div>

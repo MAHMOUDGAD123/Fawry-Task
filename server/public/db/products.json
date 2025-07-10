@@ -1,0 +1,253 @@
+[
+  {
+    "id": "1",
+    "name": "Cheese",
+    "price": 100,
+    "quantity": 10,
+    "category": "food",
+    "shippable": true,
+    "weight": 200,
+    "expirationDate": "2025-07-18T00:00:00.000Z",
+    "description": "Premium aged cheddar cheese"
+  },
+  {
+    "id": "2",
+    "name": "Biscuits",
+    "price": 150,
+    "quantity": 5,
+    "category": "food",
+    "shippable": true,
+    "weight": 700,
+    "expirationDate": "2025-08-03T00:00:00.000Z",
+    "description": "Chocolate chip biscuits pack"
+  },
+  {
+    "id": "3",
+    "name": "TV",
+    "price": 500,
+    "quantity": 3,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 5000,
+    "description": "55-inch Smart LED TV"
+  },
+  {
+    "id": "4",
+    "name": "Mobile",
+    "price": 300,
+    "quantity": 8,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 200,
+    "description": "Smartphone with 128GB storage"
+  },
+  {
+    "id": "5",
+    "name": "Mobile Scratch Card",
+    "price": 20,
+    "quantity": 100,
+    "category": "digital",
+    "shippable": false,
+    "description": "Mobile phone top-up card"
+  },
+  {
+    "id": "6",
+    "name": "Milk",
+    "price": 50,
+    "quantity": 15,
+    "category": "food",
+    "shippable": true,
+    "weight": 1000,
+    "expirationDate": "2025-07-10T00:00:00.000Z",
+    "description": "Fresh whole milk 1L"
+  },
+  {
+    "id": "7",
+    "name": "Bread",
+    "price": 30,
+    "quantity": 20,
+    "category": "food",
+    "shippable": true,
+    "weight": 500,
+    "expirationDate": "2025-07-08T00:00:00.000Z",
+    "description": "Whole wheat bread loaf"
+  },
+  {
+    "id": "8",
+    "name": "Laptop",
+    "price": 800,
+    "quantity": 2,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 2500,
+    "description": "14-inch laptop with 16GB RAM"
+  },
+  {
+    "id": "9",
+    "name": "Headphones",
+    "price": 120,
+    "quantity": 12,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 300,
+    "description": "Wireless noise-cancelling headphones"
+  },
+  {
+    "id": "10",
+    "name": "Tablet",
+    "price": 400,
+    "quantity": 6,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 500,
+    "description": "10-inch tablet with 64GB storage"
+  },
+  {
+    "id": "11",
+    "name": "Gaming Gift Card",
+    "price": 50,
+    "quantity": 200,
+    "category": "digital",
+    "shippable": false,
+    "description": "Digital gaming platform gift card"
+  },
+  {
+    "id": "12",
+    "name": "Music Streaming Subscription",
+    "price": 15,
+    "quantity": 500,
+    "category": "digital",
+    "shippable": false,
+    "description": "1-month music streaming subscription"
+  },
+  {
+    "id": "13",
+    "name": "Yogurt",
+    "price": 25,
+    "quantity": 30,
+    "category": "food",
+    "shippable": true,
+    "weight": 150,
+    "expirationDate": "2025-07-12T00:00:00.000Z",
+    "description": "Greek yogurt 150g cup"
+  },
+  {
+    "id": "14",
+    "name": "Butter",
+    "price": 80,
+    "quantity": 8,
+    "category": "food",
+    "shippable": true,
+    "weight": 250,
+    "expirationDate": "2025-07-25T00:00:00.000Z",
+    "description": "Unsalted butter 250g pack"
+  },
+  {
+    "id": "15",
+    "name": "Smartwatch",
+    "price": 250,
+    "quantity": 4,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 150,
+    "description": "Fitness tracking smartwatch"
+  },
+  {
+    "id": "16",
+    "name": "Wireless Mouse",
+    "price": 40,
+    "quantity": 15,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 100,
+    "description": "Ergonomic wireless mouse"
+  },
+  {
+    "id": "17",
+    "name": "Keyboard",
+    "price": 80,
+    "quantity": 10,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 800,
+    "description": "Mechanical gaming keyboard"
+  },
+  {
+    "id": "18",
+    "name": "Digital Magazine Subscription",
+    "price": 10,
+    "quantity": 1000,
+    "category": "digital",
+    "shippable": false,
+    "description": "1-month digital magazine access"
+  },
+  {
+    "id": "19",
+    "name": "E-book",
+    "price": 12,
+    "quantity": 999,
+    "category": "digital",
+    "shippable": false,
+    "description": "Digital book download"
+  },
+  {
+    "id": "20",
+    "name": "Ice Cream",
+    "price": 60,
+    "quantity": 12,
+    "category": "food",
+    "shippable": true,
+    "weight": 500,
+    "expirationDate": "2025-12-31T00:00:00.000Z",
+    "description": "Vanilla ice cream 500ml tub"
+  },
+  {
+    "id": "21",
+    "name": "Frozen Pizza",
+    "price": 90,
+    "quantity": 18,
+    "category": "food",
+    "shippable": true,
+    "weight": 400,
+    "expirationDate": "2025-09-15T00:00:00.000Z",
+    "description": "Margherita frozen pizza"
+  },
+  {
+    "id": "22",
+    "name": "Camera",
+    "price": 600,
+    "quantity": 3,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 1200,
+    "description": "Digital camera with 24MP sensor"
+  },
+  {
+    "id": "23",
+    "name": "Bluetooth Speaker",
+    "price": 90,
+    "quantity": 8,
+    "category": "electronics",
+    "shippable": true,
+    "weight": 600,
+    "description": "Portable Bluetooth speaker"
+  },
+  {
+    "id": "24",
+    "name": "Software License",
+    "price": 200,
+    "quantity": 50,
+    "category": "digital",
+    "shippable": false,
+    "description": "Professional software license key"
+  },
+  {
+    "id": "25",
+    "name": "Online Course",
+    "price": 150,
+    "quantity": 100,
+    "category": "digital",
+    "shippable": false,
+    "description": "Web development online course"
+  }
+]
