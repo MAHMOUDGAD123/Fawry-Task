@@ -59,16 +59,16 @@ declare namespace Info {
     shippingFees: number;
     paidAmount: number;
     customerNewBalance: number;
+    dateTime: {
+      date: string;
+      time: string;
+    };
   };
 
   type ReceiptsData = {
     receipts: ReceiptInfo[];
     currency: string;
     weightUnit: string;
-    dateTime: {
-      date: string;
-      time: string;
-    };
   };
 
   type PopupMessageType = "info" | "error" | "warning";

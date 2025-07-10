@@ -42,7 +42,7 @@ export default class extends DummyView {
         </div>`;
     }
 
-    const { receipts, weightUnit, currency, dateTime } = serverResponse.data;
+    const { receipts, weightUnit, currency } = serverResponse.data;
 
     return receipts.map((receipt) => {
       return `
@@ -51,8 +51,8 @@ export default class extends DummyView {
           <div class="receipt-header">
             <h1 class="receipt-title">RECEIPT</h1>
             <div class="receipt-datetime">
-              <div class="receipt-date">${dateTime.date}</div>
-              <div class="receipt-time">${dateTime.time}</div>
+              <div class="receipt-date">${receipt.dateTime.date}</div>
+              <div class="receipt-time">${receipt.dateTime.time}</div>
             </div>
           </div>
 

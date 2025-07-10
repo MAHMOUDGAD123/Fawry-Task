@@ -7,14 +7,30 @@
 
   & > .content {
     margin-block: 35px;
-    padding-inline: 10px;
+    /* width: 100%; */
 
     & > #receipts_rt {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: 100%;
+      columns: 1 auto;
       gap: 20px;
-      padding: 15px;
+      
+      @media (width >= 900px) {
+        columns: 2 auto;
+      }
+      @media (width >= 1280px) {
+        columns: 3 auto;
+      }
+
+      &:has(> .empty) {
+        columns: auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & > .receipt-card {
+          margin-bottom: 0;
+        }
+      }
 
       & > .empty {
         font-size: 2rem;
@@ -33,6 +49,7 @@
       }
 
       & .receipt-card {
+        margin-bottom: 20px;
         background: linear-gradient(
           135deg,
           var(--color-header),
@@ -63,7 +80,6 @@
         animation: pulse 4s ease-in-out infinite;
         z-index: 0;
       }
-
       @keyframes pulse {
         0%,
         100% {
@@ -149,6 +165,8 @@
         padding: 12px;
         border-radius: 8px;
         display: flex;
+        gap: 10px;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
         align-items: center;
         transition: all var(--transition-duration-global);
